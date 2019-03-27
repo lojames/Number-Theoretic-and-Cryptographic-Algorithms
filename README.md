@@ -20,7 +20,7 @@ Example: `ruby factor.rb 6198358098031035910503153513531513513746586784557980633
 
 - Naive factoring of a positive integer n via brute force by trial division: `factors_by_brute_force_trial_division(n, bound)`. This method is useful and efficient for small numbers.  The method returns an array of the prime factorization of the number. 
 - Pollard's Rho with Brent's Cycle detection: `pollards_rho(n)`. **NOT YET IMPLEMENTED**
-- LCM using Edwards Curves.  **NOT YET IMPLEMENTED**
+- ECM using Edwards Curves.  **NOT YET IMPLEMENTED**
 - Quadratic Sieve using Contini's version of the Self-Initializing Quadratic Sieve that can be run in parallel. **NOT YET IMPLEMENTED**
 
 # Number Theory

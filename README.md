@@ -4,6 +4,8 @@ This git includes various algorithms useful for factoring large positive integer
 
 The algorithms are currently organized into modules.  To use, require the file and include the module if necessary.
 
+**Due to YARV's GLI, this project will be re-coded in Python 3.0 for a truly parallel implementation of the SIQS and Index Calculus algorithms.**
+
 # Basic Algorithms
 
 - Fast primality testing of a large, positive, odd integer n using k-pass Miller-Rabin: `is_prime?(n, k)`
@@ -14,7 +16,7 @@ The algorithms are currently organized into modules.  To use, require the file a
 
 # Factoring Algorithms
 
-Efficient factorization of numbers can be done by running factor.rb with an argument of the number to be factored. *NOT YET IMPLEMENTED*
+Efficient factorization of numbers can be done by running factor.rb with an argument of the number to be factored. **NOT YET IMPLEMENTED**
 
 Example: `ruby factor.rb 619835809803103591050315351353151351374658678455798063350913509251035901290135193`
 
@@ -25,6 +27,6 @@ Example: `ruby factor.rb 6198358098031035910503153513531513513746586784557980633
 
 # Number Theory
 
-- Determine if g is a primitive root mod p in multiplicative groups of integers modulo a prime, p. **NOT YET IMPLEMENTED**
-- Efficient determination of the totient of n which utilizes factoring. **NOT YET IMPLEMENTED**
-- Determine the legendre symbol of a and the prime p.
+- Determine if g is a primitive root in multiplicative groups of integers modulo n using brute force. `brute_force_is_primitive_root?(g,n)`
+- Efficient determination of the totient of n which utilizes factoring. `totient(n)` **Currently uses brute force trial division only**
+- Determine the legendre symbol of a and the prime p: `legendre(a,p)`

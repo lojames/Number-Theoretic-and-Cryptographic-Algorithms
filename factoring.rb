@@ -114,7 +114,3 @@ module Factoring
 end
 
 include Factoring
-
-n = generate_prime(12)**2*generate_prime(13)*generate_prime(11)*generate_prime(13)*generate_prime(13)
-puts "n = #{n} with #{num_digits(n)} digits"
-puts factors_by_pollards_rho(n).to_s

@@ -77,7 +77,7 @@ module Factoring
     g == n ? nil : g
   end
 
-  def factors_by_pollards_rho(n, time = 10)
+  def factors_by_pollards_rho(n, time = 9999999999999999)
     rem = n
     factors = []
     start_time = Time.now
@@ -106,11 +106,9 @@ module Factoring
     }
 
     while Time.now - start_time < time && executing
-      sleep(0.5)
+      sleep(1)
     end
     factors << rem if rem > 1
     factors
   end
 end
-
-include Factoring

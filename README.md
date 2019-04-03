@@ -21,12 +21,13 @@ Efficient factorization of numbers can be done by running factor.rb with an argu
 Example: `ruby factor.rb 619835809803103591050315351353151351374658678455798063350913509251035901290135193`
 
 - Naive factoring of a positive integer n via brute force by trial division: `factors_by_brute_force_trial_division(n, bound)`. This method is useful and efficient for small numbers.  The method returns an array of the prime factorization of the number. 
-- Pollard's Rho with Brent's Cycle detection: `pollards_rho(n)`.
+- Pollard's Rho with Brent's cycle detection: `pollards_rho(n)`.
+- Factor n into prime factors using Pollard's Rho with Brent's cycle detection or until `time` seconds have elapsed: `factors_by_pollards_rho(n, time).
 - ECM using Montgomery Curves.  **NOT YET IMPLEMENTED**
 - Quadratic Sieve using Contini's version of the Self-Initializing Quadratic Sieve that can be run in parallel. **NOT YET IMPLEMENTED**
 
 # Number Theory
 
 - Determine if g is a primitive root in multiplicative groups of integers modulo n using brute force. `brute_force_is_primitive_root?(g,n)`
-- Efficient determination of the totient of n which utilizes factoring. `totient(n)` **Currently uses brute force trial division only**
+- Efficient determination of the totient of n which utilizes factoring. `totient(n)` *Current implementation uses brute force trial division.*
 - Determine the legendre symbol of a and the prime p: `legendre(a,p)`
